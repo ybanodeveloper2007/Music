@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" >
+  <PreferenceCategory android:layout="@xml/divider" />
+  <!--PROFILE SECTION -->
+  <PreferenceCategory android:key="Account_Profile_key" android:title="@string/Lbl_General">
+    
+    <Preference
+      android:key="general_key"
+      android:title="@string/Lbl_EditProfileInfo" />
+
+    <Preference
+      android:key="myAccount_key"
+      android:title="@string/Lbl_MyAccount" />
+     
+    <Preference
+      android:key="Withdrawals_key"
+      android:title="@string/Lbl_Withdrawals" />
+ 
+    <Preference
+      android:key="goPro_key"
+      android:title="@string/Lbl_Go_Pro" />
+ 
+    <Preference
+      android:key="article_key"
+      android:title="@string/Lbl_Article" />
+ 
+    <Preference
+      android:key="blocked_key"
+      android:title="@string/Lbl_BlockedUsers" />
+
+    <!--Security SECTION-->
+    <PreferenceCategory android:layout="@xml/divider"/>
+    <PreferenceCategory  android:key="SecurityAccount_key" android:title="@string/Lbl_Security" >
+
+      <Preference
+        android:key="editPassword_key"
+        android:title="@string/Lbl_Password"
+        android:summary="@string/Lbl_Change_your_password" />
+
+      <Preference
+        android:key="Twofactor_key"
+        android:title="@string/Lbl_TwoFactor"  />
+
+      <Preference
+        android:key="ManageSessions_key"
+        android:title="@string/Lbl_ManageSessions"  />
+
+    </PreferenceCategory>
+ 
+    <PreferenceCategory android:layout="@xml/divider" />
+
+    <PreferenceCategory android:key="Theme_key" android:title="@string/Lbl_Display" >
+
+      <Preference
+        android:key="Night_Mode_key"
+        android:title="@string/Lbl_Theme" />
+
+    </PreferenceCategory>
+
+  </PreferenceCategory>
+ 
+  <!--Interest  SECTION-->
+  <PreferenceCategory android:layout="@xml/divider" />
+  <PreferenceCategory android:title="@string/Lbl_Interest" >
+
+    <Preference
+      android:key="interest_key"
+      android:title="@string/Lbl_Interest"
+      android:summary="@string/Lbl_SelectYourMusicPreference" />
+ 
+  </PreferenceCategory>
+ 
+  <!--Support SECTION-->
+  <PreferenceCategory android:layout="@xml/divider" />
+  <PreferenceCategory android:title="@string/Lbl_Support">
+   
+    <Preference
+        android:key="help_key"
+        android:title="@string/Lbl_Help" />
+  
+    <Preference
+      android:key="about_key"
+      android:title="@string/Lbl_About" />
+
+    <PreferenceCategory android:layout="@xml/divider" />
+
+    <Preference
+      android:key="deleteAccount_key"
+      android:title="@string/Lbl_DeleteAccount" />
+    
+    <Preference 
+      android:key="logout_key"
+      android:title="@string/Lbl_Logout" />
+  
+  </PreferenceCategory>
+  
+</PreferenceScreen>

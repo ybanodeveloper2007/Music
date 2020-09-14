@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+	 android:background="?attr/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<!--Head Page -->
+	<RelativeLayout
+		android:id="@+id/mainLayout"
+		android:paddingTop="10dp"
+		android:layout_width="match_parent"
+		android:background="?attr/colorPrimary"
+		android:layout_height="48dp">
+
+		<TextView
+			android:id="@+id/IconBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="&gt;"
+			android:textSize="20sp"
+			android:layout_marginStart="25dp" />
+		<TextView
+			android:id="@+id/titlepage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="0dp"
+			android:layout_centerVertical="true"
+			android:text="@string/Lbl_Settings"
+			android:layout_centerHorizontal="true"
+			android:textSize="15sp"
+			android:layout_marginStart="61dp" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_alignParentBottom="true"
+			android:background="#efefef" />
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		>
+    <LinearLayout
+        android:id="@+id/content_frameew"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="@android:color/transparent"
+		android:layout_height="wrap_content" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_General"
+				android:textSize="13sp"
+				android:fontFamily="@font/fa_light_300"
+				android:layout_marginBottom="30sp"
+				android:textColor="@color/primary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_EditProfileInfo"
+				android:layout_marginBottom="20sp"
+				android:id="@+id/tvEditProfile"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_MyAccount"
+				android:id="@+id/tvMyAccount"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Withdrawals"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Go_Pro"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Article"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_BlockedUsers"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Security"
+				android:textSize="13sp"
+				android:fontFamily="@font/fa_light_300"
+				android:layout_marginBottom="30sp"
+				android:textColor="@color/primary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Password"
+				android:id="@+id/tvPassword"
+				android:layout_marginBottom="1sp"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tvPasswordValue"
+				android:text= "@string/Lbl_Change_Password"
+				android:layout_marginBottom="20sp"
+				android:textSize="17dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_gray" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_TwoFactor"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_ManageSessions"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Display"
+				android:textSize="13sp"
+				android:fontFamily="@font/fa_light_300"
+				android:layout_marginBottom="30sp"
+				android:textColor="@color/primary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Theme"
+				android:layout_marginBottom="1sp"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Light"
+				android:layout_marginBottom="20sp"
+				android:textSize="17dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_gray" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Interest"
+				android:textSize="13sp"
+				android:fontFamily="@font/fa_light_300"
+				android:layout_marginBottom="30sp"
+				android:textColor="@color/primary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Interest"
+				android:layout_marginBottom="5sp"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_SelectYourMusicPreference"
+				android:layout_marginBottom="20sp"
+				android:textSize="17dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_gray" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Support"
+				android:textSize="13sp"
+				android:fontFamily="@font/fa_light_300"
+				android:layout_marginBottom="30sp"
+				android:textColor="@color/primary" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Help"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_About"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			android:padding="20sp"
+			android:layout_marginBottom="10sp"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_DeleteAccount"
+				android:id="@+id/tvDeleteAccount"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:fontFamily="@font/fa_regular_400"
+				android:textColor="@color/gnt_black" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text= "@string/Lbl_Logout"
+				android:id="@+id/tvLogout"
+				android:layout_gravity="left"
+				android:gravity="left"
+				android:fontFamily="@font/fa_regular_400"
+				android:layout_marginBottom="20sp"
+				android:textSize="15dp"
+				android:textColor="@color/gnt_black" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	</ScrollView>
+</LinearLayout>
